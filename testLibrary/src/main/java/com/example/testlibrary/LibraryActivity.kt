@@ -1,20 +1,17 @@
 package com.example.testlibrary
 
-import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.TextView
 
 class LibraryActivity : AppCompatActivity() {
-
+    lateinit var textView: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        setSupportActionBar(findViewById(R.id.toolbar))
+        val text = intent.getStringExtra("text")
+        setContentView(R.layout.activity_library)
 
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+        textView = findViewById(R.id.textView)
+        textView.text = text
     }
 }

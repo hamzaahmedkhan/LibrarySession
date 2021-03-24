@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         button1 = findViewById(R.id.button1)
 
         button1.setOnClickListener {
-            LibraryManager.openLibraryScreen(this)
+            LibraryManager.openLibraryScreen(this, "This is text from Main Activity")
         }
     }
 }

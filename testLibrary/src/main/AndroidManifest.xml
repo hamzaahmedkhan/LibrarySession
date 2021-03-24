@@ -3,10 +3,7 @@
     package="com.example.testlibrary">
 
     <application>
-        <activity
-            android:name=".LibraryActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.LibrarySession.NoActionBar"></activity>
+        <activity android:name=".LibraryActivity"></activity>
     </application>
 
 </manifest>
