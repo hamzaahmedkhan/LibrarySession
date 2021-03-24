@@ -12,7 +12,7 @@ To include `testLibrary` in your project, add the following to your dependencies
 **app/build.gradle**
 ```groovy
 dependencies {
-        implementation 'com.example.testlibrary:testlibrary:1.0.0'
+    implementation 'com.github.hamzaahmedkhan:LibrarySession:1.0.0'
 }
 ```
 
